@@ -1,7 +1,10 @@
 import Head from 'next/head';
 import { ReactNode } from 'react';
 
-interface Props { title: string; children: ReactNode }
+interface Props {
+  title: string;
+  children: ReactNode;
+}
 export default function Layout({ title, children }: Props) {
   return (
     <div className="min-h-screen p-4">
